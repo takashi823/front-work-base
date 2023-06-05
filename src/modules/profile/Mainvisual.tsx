@@ -1,9 +1,10 @@
 import { Box, SxProps, Theme } from "@mui/material";
+import bicycle from "../../resources/work1/images/bicycle1.jpg"
 
 export const Mainvisual = () => {
   return (
     <Box className="Mainvisual" sx={sx}>
-      メインビジュアル
+      <img src="{ bicycle }" alt="bicycle" />
     </Box>
   );
 };
