@@ -14,6 +14,5 @@ const sx: SxProps<Theme> = {
     backgroundColor: "000aaa",
   },
   ".Header-Title" : {
-
   },
 };
