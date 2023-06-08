@@ -11,7 +11,7 @@ export const Footer = () => {
 const sx: SxProps<Theme> = {
   "&.Footer" : {
     width: "100%",
-    marginTop: "100px",
+    margin: "100px auto 10px",
     textAlign: "center",
   },
 };

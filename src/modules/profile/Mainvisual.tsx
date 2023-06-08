@@ -14,7 +14,9 @@ const sx: SxProps<Theme> = {
     width: "100%",
   },
   ".Mainvisual-Image" : {
-    objectFit: "contain",
+    objectFit: "cover",
+    height: "600px",  
+    maxWidth: "1920px",
     width: "100%",
   }
 };
