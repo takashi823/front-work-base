@@ -3,7 +3,7 @@ import { Box, SxProps, Theme } from "@mui/material";
 export const Footer = () => {
   return (
     <Box className="Footer" sx={sx}>
-      フッター
+      © 2020 Profileaa
     </Box>
   );
 };
@@ -11,5 +11,7 @@ export const Footer = () => {
 const sx: SxProps<Theme> = {
   "&.Footer": {
     width: "100%",
+    marginTop: "100px",
+    textAlign: "center",
   },
 };

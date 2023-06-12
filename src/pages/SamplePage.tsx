@@ -22,6 +22,11 @@ export const SamplePage = () => {
 // クラス名に対するスタイルを定義
 const sx: SxProps<Theme> = {
   "&.SamplePage": {
-    width: "100%",    
-  }
+    width: "100%",
+    backgroundColor: {
+      md: "red",
+      xs: "blue",
+    },
+  },
+
 };
