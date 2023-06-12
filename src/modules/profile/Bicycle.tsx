@@ -1,26 +1,26 @@
 import { Box, SxProps, Theme, Typography } from "@mui/material";
 import bicycle1 from "../../resources/work1/images/bicycle1.jpg";
+import bicycle2 from "../../resources/work1/images/bicycle2.jpg";
+import bicycle3 from "../../resources/work1/images/bicycle3.jpg";
 
 export const Bicycle = () => {
+  const itemList = [
+    {title: "タイトル", text: "テキスト", image: bicycle1},
+    {title: "タイトル", text: "テキスト", image: bicycle2},
+    {title: "タイトル", text: "テキスト", image: bicycle3},
+  ];
   return (
     <Box className="Bicycle" sx={sx}>
       <Typography className="Bicycle-Title" variant="h3">Bicycle</Typography>
       <Box className="Bicycle-Content">
-        <Box className="Bicycle-Content-Item">
-          <img className="Bicycle-Content-Item-Image" src={bicycle1} alt="自転車1" />
-          <Typography className="Bicycle-Content-Item-Title">タイトルタイトル</Typography>
-          <Box className="Bicycle-Content-Item-Text">テキストテキスト</Box>
+        {itemList.map((item) => (
+          <Box className="Bicycle-Content-Item">
+          <img className="Bicycle-Content-Item-Image" src={item.image} alt="自転車1" />
+          <Typography className="Bicycle-Content-Item-Title">{item.title}</Typography>
+          <Box className="Bicycle-Content-Item-Text">{item.text}</Box>
         </Box>
-        <Box className="Bicycle-Content-Item">
-          <img className="Bicycle-Content-Item-Image" src={bicycle1} alt="自転車1" />
-          <Typography className="Bicycle-Content-Item-Title">タイトルタイトル</Typography>
-          <Box className="Bicycle-Content-Item-Text">テキストテキスト</Box>
-        </Box>
-        <Box className="Bicycle-Content-Item">
-          <img className="Bicycle-Content-Item-Image" src={bicycle1} alt="自転車1" />
-          <Typography className="Bicycle-Content-Item-Title">タイトルタイトル</Typography>
-          <Box className="Bicycle-Content-Item-Text">テキストテキスト</Box>
-        </Box>
+        )
+        )}
       </Box>
     </Box>
   );
