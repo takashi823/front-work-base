@@ -4,7 +4,7 @@ import profileImg from "../../resources/work1/images/about.jpg";
 export const About = () => {
   return (
     <Box className="About" sx={sx}>
-      <Box className="About-Title">About</Box>
+      <Typography className="About-Title" variant="h3">About</Typography>
       <Box className="About-Content">
         <img className="About-Content-Image" src={ profileImg } alt="profile" />
         <Box className="About-Content-Profile">
@@ -18,13 +18,18 @@ export const About = () => {
 
 const sx: SxProps<Theme> = {
   "&.About" : {
-    width: "100%",
+    width: "60%",
+    margin: "100px auto",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
   },
   ".About-Title" : {
-    textAlign: "center",
-    margin: "40px",
-    fontSize: "40px",
+    display: "inline-flex",
+    fontWeight: "bold",
+    margin:"0 auto 40px auto",
     borderBottom: "1px solid #000",
+
   },
   ".About-Content" : {
     display: "flex",
