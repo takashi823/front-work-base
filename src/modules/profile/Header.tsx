@@ -14,9 +14,6 @@ export const Header = () => {
             {item.name}
           </Link>
         ))}
-        <Link className="Header-Section-Link" href="#" color="#000" underline="none">
-          Bicycle
-        </Link>
       </Box>
     </Box>
   );
@@ -24,7 +21,10 @@ export const Header = () => {
 
 const sx: SxProps<Theme> = {
   "&.Header": {
-    width: "60%",
+    width:{
+      md:"60%",
+      xs:"100%"
+    },
     margin: "0 auto",
     display: "flex",
     alignItems: "center",
@@ -36,7 +36,10 @@ const sx: SxProps<Theme> = {
     fontWeight: "bold",
     backgroundColor: "#000",
     padding: "4px 20px",
-    margin: "10px 0",
+    margin: {
+      md:"10px 0",
+      xs:"10px 16px"
+    },
   },
   ".Header-Section-Link": {
     margin: "0 16px",

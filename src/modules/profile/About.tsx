@@ -33,12 +33,19 @@ const sx: SxProps<Theme> = {
     borderBottom: "1px solid #000",
   },
   ".About-Content": {
-    marginTop: "50px",
+    margin:"50px auto 0",
     display: "flex",
+    flexDirection: {
+      md:"row",
+      xs:"column",
+    },
     justifyContent: "center",
   },
   ".About-Content-Image": {
-    marginRight: "30px",
+    margin:{
+      md:"0 30px",
+      xs:"30px auto"
+    },
     width: "100px",
     height: "100px",
     borderRadius: "50%",

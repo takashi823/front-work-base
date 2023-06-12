@@ -28,7 +28,10 @@ export const Bicycle = () => {
 
 const sx: SxProps<Theme> = {
   "&.Bicycle" : {
-    width: "60%",
+    width: {
+      md:"60%",
+      xs:"100%",
+    },
     margin: "100px auto",
     display: "flex",
     justifyContent: "center",
@@ -43,12 +46,22 @@ const sx: SxProps<Theme> = {
   ".Bicycle-Content":{
     marginTop: "50px",
     display: "flex",
+    flexDirection: {
+      md:"row",
+      xs:"column",
+    },
     justifyContent: "space-between",
     width: "100%",
   },
   ".Bicycle-Content-Item":{
     display: "flex",
-    width: "32%",
+    width: {
+      md:"32%",
+      xs:"90%",
+    },
+    margin: {
+      xs:"20px auto",
+    },
     flexDirection: "column",
     justifyContent: "center",
   },
