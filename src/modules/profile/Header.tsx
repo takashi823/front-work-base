@@ -15,7 +15,6 @@ export const Header = () => {
           </Link>
         ))}
         <Link className="Header-Section-Link" href="#" color="#000" underline="none">
-          Bicycle
         </Link>
       </Box>
     </Box>
