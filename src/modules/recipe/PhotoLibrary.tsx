@@ -1,4 +1,4 @@
-import { Box, SxProps, Theme, Link } from "@mui/material";
+import { Box, SxProps, Theme} from "@mui/material";
 import recipe1 from "../../resources/work2/images/recipe1.jpg";
 import recipe2 from "../../resources/work2/images/recipe2.jpg";
 import recipe3 from "../../resources/work2/images/recipe3.jpg";
@@ -27,12 +27,19 @@ const sx: SxProps<Theme> = {
   },
   ".PhotoLibrary-ImageList": {
     display: "flex",
+    flexDirection:{
+      md:"row",
+      xs: "column",
+    },
     marginTop: "50px",
     width: "100%",
   },
   ".PhotoLibrary-ImageList-Image": {
     objectFit: "contain",
-    width: "33%",
+    width: {
+      md:"33%",
+      xs: "100%",
+    },
     border: "1px solid #000",
   },
   ".PhotoLibrary-Link": {

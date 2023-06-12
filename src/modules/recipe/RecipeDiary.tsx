@@ -26,6 +26,10 @@ const sx: SxProps<Theme> = {
     fontWeight: "bold",
   },
   ".RecipeDiary-Main":{
-    marginTop:"20px",
+    margin:"20px auto 0",
+    width: {
+      md:"80%",
+      xs:"350px",
+    },
   }
 };
