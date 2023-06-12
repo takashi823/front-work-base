@@ -4,12 +4,17 @@ import recipe2 from "../../resources/work2/images/recipe2.jpg";
 import recipe3 from "../../resources/work2/images/recipe3.jpg";
 
 export const PhotoLibrary = () => {
+  const itemList = [
+    { src: recipe1, alt: "recipe1" },
+    { src: recipe2, alt: "recipe2" },
+    { src: recipe3, alt: "recipe3" },
+  ];
   return (
     <Box className="PhotoLibrary" sx={sx}>
       <Box className="PhotoLibrary-ImageList">
-        <img className="PhotoLibrary-ImageList-Image" src={recipe1} alt="recipe1" />
-        <img className="PhotoLibrary-ImageList-Image" src={recipe2} alt="recipe2" />
-        <img className="PhotoLibrary-ImageList-Image" src={recipe3} alt="recipe3" />
+        {itemList.map((item) => (
+          <img className="PhotoLibrary-ImageList-Image" src={item.src} alt={item.alt} />
+        ))}
       </Box>
       <Box className="PhotoLibrary-Link">レシピ一覧を見る</Box>
     </Box>
