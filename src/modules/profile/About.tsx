@@ -11,7 +11,6 @@ export const About = () => {
           <Typography className="About-Content-Name">KAKERU MIYAICHI</Typography>
           <Box className="About-Content-Text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</Box>
         </Box>
-        
       </Box>
     </Box>
   );
