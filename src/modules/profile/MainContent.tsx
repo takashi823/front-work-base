@@ -1,15 +1,15 @@
 import { Box, SxProps, Theme } from "@mui/material";
 
-export const Footer = () => {
+export const MainContent = () => {
   return (
-    <Box className="Footer" sx={sx}>
-      フッターサンプル
+    <Box className="MainContent" sx={sx}>
+      コンテンツ
     </Box>
   );
 };
 
 const sx: SxProps<Theme> = {
-  "&.Footer" : {
+  "&.MainContent" : {
     width: "100%",
   },
 };

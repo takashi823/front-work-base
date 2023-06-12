@@ -11,5 +11,8 @@ export const Header = () => {
 const sx: SxProps<Theme> = {
   "&.Header" : {
     width: "100%",
+    backgroundColor: "#000aaa",
+  },
+  ".Header-Title" : {
   },
 };
