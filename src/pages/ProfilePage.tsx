@@ -17,7 +17,6 @@ export const ProfilePage = () => {
       <Mainvisual />
       <About />
       <Bicycle />
-      <MainContent />
       <Footer />
     </Box>
   );
